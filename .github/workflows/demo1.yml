@@ -4,6 +4,14 @@ on:
   pull_request:
     types:
       - opened
+    branches:
+      - master
+  push:
+    branches:
+      - master
+    paths-ignore:
+    - '.github/workflows/*'
+
 
 jobs:
   deploy:
